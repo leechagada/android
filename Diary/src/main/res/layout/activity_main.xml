@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘 날씨는 어땠나요?"
+        android:textColor="#aaaaaa"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/wSunny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="맑음"/>
+            <Button
+                android:id="@+id/wLilCloudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구름 조금"/>
+            <Button
+                android:id="@+id/wCloudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구름"/>
+            <Button
+                android:id="@+id/wRainy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비"/>
+            <Button
+                android:id="@+id/wSnowy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="눈"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 기분은 어땠나요?"
+        android:textColor="#aaaaaa"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/emotion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신남" />
+
+            <Button
+                android:id="@+id/emotion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설렘" />
+
+            <Button
+                android:id="@+id/emotion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="행복" />
+
+            <Button
+                android:id="@+id/emotion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="놀람" />
+
+            <Button
+                android:id="@+id/emotion5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보통" />
+
+            <Button
+                android:id="@+id/emotion6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="피곤" />
+
+            <Button
+                android:id="@+id/emotion7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아픔" />
+
+            <Button
+                android:id="@+id/emotion8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="슬픔" />
+
+            <Button
+                android:id="@+id/emotion9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="화남" />
+
+            <Button
+                android:id="@+id/emotion10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="무서움" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘 무슨 음식을 드셨나요?"
+        android:textColor="#aaaaaa"/>
+
+    <EditText
+        android:id="@+id/editFoodText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="먹은 음식 적기" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="만난 사람은"
+        android:textColor="#aaaaaa"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="연락처에서 선택하기"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="직접 입력하기"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="혼자 자유롭게"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/DiaryMakingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="mOnClick"
+        android:text="일기 생성하기" />
+
+    <TextView
+        android:id="@+id/textMade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="완성된 일기가 보여지는 곳이다." />
+
+
+</LinearLayout>
